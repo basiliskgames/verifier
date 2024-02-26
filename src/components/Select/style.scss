@@ -1,0 +1,105 @@
+.c_dropdown {
+  position: relative;
+  display: block;
+  width: 140px;
+  color: black;
+  font-weight: 600;
+}
+
+.c_dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  height: 72px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.c_dropdown-toggle:hover {
+  background-color: #f8f8f8;
+}
+
+.c_dropdown-option-image {
+  width: 60px;
+  height: 60px;
+}
+
+.c_dropdown-option-label {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+.c_dropdown-caret {
+  display: inline-block;
+  margin-left: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #999 transparent transparent transparent;
+}
+
+.c_dropdown-menu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin: 0;
+  padding: 12px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.c_dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.c_dropdown-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.c_dropdown-menu li:hover {
+  background-color: #f8f8f8;
+}
+
+.c_dropdown-menu li .dropdown-option-label {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+/* Centering the dropdown */
+.c_dropdown.open .dropdown-menu {
+  transform: translateY(0);
+}
+
+/* Adjust dropdown width */
+.c_dropdown.open .dropdown-toggle {
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+
+.c_dropdown.open .dropdown-menu {
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+}
