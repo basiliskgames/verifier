@@ -8,7 +8,7 @@ interface Props {
 }
 
 const super_symbols = [
-  { sbl: null, label: 'Base game' },
+  { label: 'Base game' },
   { sbl: 'H1' },
   { sbl: 'H2' },
   { sbl: 'H3' },

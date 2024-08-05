@@ -3,3 +3,4 @@ export {AztecTemple} from "./AztecTemple"
 export {GrandTheftSlot} from "./GrandTheftSlot"
 export {EgyptianLands} from "./EgyptianLands"
 export {ShootingRange} from "./ShootingRange"
+export {Mafia} from './Mafia'

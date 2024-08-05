@@ -27,6 +27,13 @@ function App() {
           <Route path="/mystic_forest" exact><Pages.EgyptianLands game="mystic_forest"/></Route>
           <Route path="/fruit_mania" exact><Pages.EgyptianLands game="fruit_mania"/></Route>
 
+          <Route path="/scifi_universe"><Pages.EgyptianLands game="scifi_universe"/></Route>
+          <Route path="/magic_stories"><Pages.EgyptianLands game="magic_stories"/></Route>
+          <Route path="/maya_temple"><Pages.EgyptianLands game="maya_temple"/></Route>
+          <Route path="/monster_mania"><Pages.EgyptianLands game="monster_mania"/></Route>
+          <Route path="/mask_bonanza"><Pages.EgyptianLands game="mask_bonanza"/></Route>
+          <Route path="/gelato_store"><Pages.EgyptianLands game="gelato_store"/></Route>
+
           <Route path="/shooting_range" exact><Pages.ShootingRange game="shooting_range"/></Route>
           <Route path="/space_attack" exact><Pages.ShootingRange game="space_attack"/></Route>
           <Route path="/pirate_treasures" exact><Pages.ShootingRange game="pirate_treasures"/></Route>
@@ -34,6 +41,13 @@ function App() {
           <Route path="/dragon_shrine" exact><Pages.ShootingRange game="dragon_shrine"/></Route>
           <Route path="/zeus_revenge" exact><Pages.ShootingRange game="zeus_revenge"/></Route>
           <Route path="/soul_chaser" exact><Pages.ShootingRange game="soul_chaser"/></Route>
+
+          <Route path="/mafia" exact><Pages.Mafia game="mafia"/></Route>
+          <Route path="/fight_club" exact><Pages.Mafia game="fight_club"/></Route>
+          <Route path="/shogun_legends" exact><Pages.Mafia game="shogun_legends"/></Route>
+          <Route path="/safari" exact><Pages.Mafia game="safari"/></Route>
+          {/* <Route path="/fisherman" exact><Pages.Mafia game="fisherman"/></Route> */}
+
         </Switch>
       </div>
     </BrowserRouter>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input, Notice, Switch } from 'components';
 import { NudgeSelect, GameResult } from './components';
-import { calcShoot } from 'math';
+import { calculateResult } from 'math/shooting_range';
 
 interface Props {
   game: string;
@@ -16,7 +16,7 @@ export const ShootingRange = ({ game }: Props) => {
   const [result, setResult] = useState<any>(null);
 
   const onCalculate = () => {
-    setResult(calcShoot(serverSeed, clientSeed, nonce, mask, isExtraBet));
+    setResult(calculateResult(serverSeed, clientSeed, nonce, mask, isExtraBet));
   };
 
   return (

@@ -11,7 +11,7 @@ interface Props {
 }
 
 interface Value {
-  sbl: string | null;
+  sbl?: string;
   label?: string;
 }
 export const Select: FC<Props> = ({ title, subTitle, value, options, onChange, game }) => {
