@@ -1,0 +1,11 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

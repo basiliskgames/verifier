@@ -1,0 +1,26 @@
+.fieldsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+}
+
+.fieldRow {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: max-content;
+}

@@ -1,0 +1,12 @@
+.field {
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
